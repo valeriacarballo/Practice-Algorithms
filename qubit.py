@@ -1,18 +1,26 @@
-# SIMULATING QUANTUM COMPUTER COMPONENTS
+'''
+SIMULATING QUANTUM COMPUTER COMPONENTS
 
-
-
-# generate random electron spin
+'''
 import random
 
-def e_spin():
-    e = ["up", "down"]
-    return random.choice(e)
 
-# assign qubit to e_spin
-spin_state = {
-    "up" : 0,
-    "down" : 1 
-}
 
-print(3)
+class Electron:
+    def __init__(self, state):
+        self.state = state
+    def getQubit():
+        superposition = {
+            "up" : 0,
+            "down" : 1
+        }
+        spin = ["up", "down"]
+        state = random.choice(spin)
+        return superposition[state]
+        
+
+
+
+
+
+

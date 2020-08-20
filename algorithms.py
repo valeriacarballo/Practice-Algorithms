@@ -40,7 +40,7 @@ a = [1, 4, 7]
 b = [1, 3, 4]
 c = [1, 8]
 
-print(symmetricDifference2(a, b, c))
+#print(symmetricDifference2(a, b, c))
 
 
 '''
@@ -73,3 +73,20 @@ newFruits = [[3, "peaches"], [1, "oranges"]]
 
 #print(updateInventory(inventory, newFruits))
 
+arr = [4, 2, 3, 6]
+
+def maxDifference(arr: list):
+    for p1 in range(len(arr)):
+        p2 = p1 + 1
+        if p2 >= len(arr):
+            break
+        if arr[p1] > arr[p2]:
+            continue
+        if arr[p2] > arr [p1]:
+            diff = arr[p2] - arr[p1]
+        return diff
+        if diff == None:
+            return None
+
+
+print(maxDifference(arr))
